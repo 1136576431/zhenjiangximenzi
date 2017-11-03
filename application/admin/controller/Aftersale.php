@@ -24,7 +24,7 @@ class Aftersale extends Backend
     {
         parent::_initialize();
         $this->model = model('AfterSale');
-        $this->view->assign("stateList", $this->model->getStatelist());
+        $this->view->assign("statusList", $this->model->getStatusList());
     }
     
     /**

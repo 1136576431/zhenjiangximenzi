@@ -30,7 +30,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'createtime', title: __('Createtime'), formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), formatter: Table.api.formatter.datetime},
                         {field: 'weigh', title: __('Weigh')},
-                        {field: 'switch', title: __('Switch')},
+                        {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

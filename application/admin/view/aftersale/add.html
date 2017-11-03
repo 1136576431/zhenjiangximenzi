@@ -13,12 +13,12 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="c-state" class="control-label col-xs-12 col-sm-2">{:__('State')}:</label>
+        <label for="c-status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
         <div class="col-xs-12 col-sm-8">
             
             <div class="radio">
-            {foreach name="stateList" item="vo"}
-            <label for="row[state]-{$key}"><input id="row[state]-{$key}" name="row[state]" type="radio" value="{$key}" {in name="key" value="1"}checked{/in} /> {$vo}</label> 
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="normal"}checked{/in} /> {$vo}</label> 
             {/foreach}
             </div>
 

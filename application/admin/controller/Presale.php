@@ -24,7 +24,7 @@ class Presale extends Backend
     {
         parent::_initialize();
         $this->model = model('PreSale');
-        $this->view->assign("stateList", $this->model->getStateList());
+        $this->view->assign("statusList", $this->model->getStatusList());
     }
     
     /**

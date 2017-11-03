@@ -24,7 +24,7 @@ class Certificate extends Backend
     {
         parent::_initialize();
         $this->model = model('Certificate');
-        $this->view->assign("stateList", $this->model->getStatelist());
+        $this->view->assign("statusList", $this->model->getStatusList());
     }
     
     /**

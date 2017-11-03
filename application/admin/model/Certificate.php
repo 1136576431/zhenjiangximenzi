@@ -18,21 +18,28 @@ class Certificate extends Model
     
     // 追加属性
     protected $append = [
-        'state_text'
+        'status_text'
     ];
     
 
-    
-    public function getStatelist()
+    protected static function init()
     {
-        return ['0' => __('State 0'),'1' => __('State 1'),'2' => __('State 2')];
+        self::afterInsert(function ($row) {
+            $row->save(['weigh' => $row['id']]);
+        });
+    }
+
+    
+    public function getStatusList()
+    {
+        return ['normal' => __('Normal'),'hidden' => __('Hidden')];
     }     
 
 
-    public function getStateTextAttr($value, $data)
+    public function getStatusTextAttr($value, $data)
     {        
-        $value = $value ? $value : $data['state'];
-        $list = $this->getStateList();
+        $value = $value ? $value : $data['status'];
+        $list = $this->getStatusList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 

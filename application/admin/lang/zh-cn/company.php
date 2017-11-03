@@ -8,5 +8,5 @@ return [
     'Createtime'  =>  '创建时间',
     'Updatetime'  =>  '更新时间',
     'Weigh'  =>  '权重',
-    'Switch'  =>  '开关'
+    'Status'  =>  '状态'
 ];

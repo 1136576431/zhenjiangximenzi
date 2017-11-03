@@ -24,7 +24,7 @@ use ArrayAccess;
  * @method mixed hidden(string $name, string $value = null, array $options = array()) static 表单hidden
  * @method mixed image(string $url, string $name = null, array $attributes = array()) static 表单image提交
  * @method mixed textarea(string $name, string $value = null, array $options = array()) static 表单textarea
- * @method mixed checkbox(string $name, string $value = 1, string $checked = null, array $options = array()) static 表单checkbox
+ * @method mixed checkbox(string $name, string $value = '1', string $checked = null, array $options = array()) static 表单checkbox
  * @method mixed radio(string $name, string $value = null, string $checked = null, array $options = array())) static 表单radio
  * @method mixed select(string $name, array $list = array(), string $selected = null, array $options = array()) static 表单textarea
  * @method mixed selectYear(string $name ,string $begin,string $end, string $selected = null ,array $options = array()) static select年

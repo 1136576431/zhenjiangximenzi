@@ -20,7 +20,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'id',
+                sortName: 'weigh',
                 columns: [
                     [
                         {checkbox: true},
@@ -29,7 +29,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'images', title: __('Images'), formatter: Table.api.formatter.images},
                         {field: 'createtime', title: __('Createtime'), formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), formatter: Table.api.formatter.datetime},
-                        {field: 'state_text', title: __('State'), operate:false},
+                        {field: 'weigh', title: __('Weigh')},
+                        {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

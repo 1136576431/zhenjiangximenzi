@@ -24,7 +24,7 @@ class Company extends Backend
     {
         parent::_initialize();
         $this->model = model('Company');
-
+        $this->view->assign("statusList", $this->model->getStatusList());
     }
     
     /**
